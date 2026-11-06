@@ -393,7 +393,7 @@ describe("the publish caller", () => {
     // call to kit's composed publish workflow deleted. The file-read half is
     // the green test's readFileSync throwing ENOENT — the same red.
     const workflowYaml = readFileSync(publishWorkflowPath, "utf8").replace(
-      /^ {4}uses: anywaye\/kit\/\.github\/workflows\/publish\.reusable\.yml@master\n/m,
+      /^ {4}uses: anywaye\/kit\/ci\/publish\.reusable\.yml@master\n/m,
       "",
     );
     expect(() => expectPublishLoop(workflowYaml, "chart", chartYaml)).toThrow(
