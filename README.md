@@ -20,16 +20,20 @@ family it has (auth, accounts, invitations, admin, settings, the `/v1/*` BFF)
 is present in `website`, and where the two differ, `website` is ahead. The
 audit behind this statement is [docs/parlor-website-audit.md](docs/parlor-website-audit.md).
 
-**What remains true about parlor: the code is free.** This repository stays
-public — its history, branches and code remain readable by anyone, free of
-charge, and nothing here is being deleted. What you may do with it is set by
-[LICENSE](LICENSE), not by this README: parlor is licensed under the
-Business Source License 1.1 (SPDX `BUSL-1.1`), which lets you copy, modify,
-create derivative works and redistribute it, and which becomes Apache-2.0 on
-2030-10-10.
+**parlor is the starting template for every anywaye project.** It is fully
+proprietary (see [LICENSE](LICENSE)): all rights reserved to Anywaye. It stays
+public so its history and code remain readable, but use, copying, modification
+and redistribution require a written Anywaye agreement.
 
-**Where to go instead:** [anywaye/website](https://github.com/anywaye/website) —
-for the product, its screens, and every screen still to come.
+**How to use it:** clone parlor into a new repository for your project and add
+your business-specific logic on top. The shell ships with the basics every
+project needs — authentication, accounts, invitations, admin, settings, the
+`/v1/*` BFF, health surfaces, theming, and the test rig — so you start from a
+working app instead of from scratch.
+
+**Upstreaming:** when you find a fix or feature in your cloned project that
+would benefit other future projects, upstream it back to parlor so the next
+clone inherits it. parlor is the shared foundation; improvements belong there.
 
 ## The philosophy: a template, not a runtime dependency
 
@@ -46,8 +50,8 @@ This is a **template**, not a platform-as-a-service dependency.
   management — arrives as code in your repo, not as a runtime dependency.
 
 What you may do with this code is set by [LICENSE](LICENSE), not by this
-README: parlor is licensed under the Business Source License 1.1
-(SPDX `BUSL-1.1`), which becomes Apache-2.0 on 2030-10-10.
+README: parlor is fully proprietary (all rights reserved to Anywaye). The
+[LICENSE](LICENSE) file is the authority.
 
 ## What is here today
 
@@ -786,13 +790,13 @@ rules, and the health-surface contracts. Long-running commands get `timeout N`.
 
 ## License
 
-[Business Source License 1.1](LICENSE), SPDX `BUSL-1.1`. Licensor `Anywaye`,
-Licensed Work `parlor`, Change Date `2030-10-10`, Change Licence `Apache-2.0`,
-no Additional Use Grant. In plain terms, and as a summary rather than a grant:
-you may copy, modify, create derivative works and redistribute parlor, and on
-the Change Date the licence becomes Apache-2.0. Production use requires a
-commercial licence from Anywaye or an Additional Use Grant — `LICENSE` is the
-authority and this paragraph is a reading of it. Third-party components remain
-under their own licenses and notices — see `package.json` /
-`package-lock.json` and the notices preserved in source. Both of those
-manifests record `BUSL-1.1`, so tooling reads the same grant the file states.
+Proprietary. See [LICENSE](LICENSE): all rights reserved to Anywaye. No
+general permission to use, copy, modify or redistribute is granted by this
+repository; any rights beyond viewing exist only under a separate written
+Anywaye agreement.
+
+parlor is the shared template for anywaye projects: clone it, then add your
+business-specific logic. Fixes and features that would benefit other future
+projects should be upstreamed to parlor so the next clone inherits them.
+Third-party components remain under their own licenses and notices — see
+`package.json` / `package-lock.json` and the notices preserved in source.
